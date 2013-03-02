@@ -1,0 +1,153 @@
+/* Kirby Auto-complete for Sublime Text 2
+ * --------------------------------------
+ *
+ * last update: 2013-03-02
+ * current kirby version: 1.1
+ */
+
+{
+    "scope": "source.php",
+
+    "completions":
+    [
+    
+
+        /*                 $site                 */
+        { "trigger": "$site", "contents": "\\$site" },
+        { "trigger": "site->modified()", "contents": "site->modified()" },
+        { "trigger": "site->pages()", "contents": "site->pages()" },
+
+
+        /*               $site->uri()            */
+        { "trigger": "site->uri()", "contents": "site->uri()" },
+        { "trigger": "site->uri()->path()", "contents": "site->uri()->path(${1:\\$n})" },
+        { "trigger": "site->uri()->path()->first()", "contents": "site->uri()->path()->first()" },
+        { "trigger": "site->uri()->path()->first()", "contents": "site->uri()->path()->last()" },
+        { "trigger": "site->uri()->params()", "contents": "site->uri()->params(${1:\\$key})" },
+        { "trigger": "site->uri()->query()", "contents": "site->uri()->query(${1:\\$key})" },
+
+
+        /*                 $pages                */
+        { "trigger": "$pages", "contents": "\\$pages" },
+        { "trigger": "pages->find()", "contents": "pages->find(${1:\\$uri}${2:, [\\$anotherUri]})" },
+        { "trigger": "pages->active()", "contents": "pages->active()" },
+        { "trigger": "pages->findOpen()", "contents": "pages->findOpen()" },
+        { "trigger": "pages->findBy()", "contents": "pages->findBy(${1:\\$key}, ${2:\\$value})" },
+        { "trigger": "pages->findByUID()", "contents": "pages->findByUID(${1:\\$uid})" },
+        { "trigger": "pages->findByDirname()", "contents": "pages->findByDirname(${1:\\$dirname})" },
+        { "trigger": "pages->findByTitle()", "contents": "pages->findByTitle(${1:\\$title})" },
+        { "trigger": "pages->filterBy()", "contents": "pages->filterBy(${1:\\$key}, ${2:\\$value}${3:, \\$split=false})" },
+        { "trigger": "pages->first()", "contents": "pages->first()" },
+        { "trigger": "pages->last()", "contents": "pages->last()" },
+        { "trigger": "pages->count()", "contents": "pages->count()" },
+        { "trigger": "pages->visible()", "contents": "pages->visible()" },
+        { "trigger": "pages->countVisible()", "contents": "pages->countVisible()" },
+        { "trigger": "pages->invisible()", "contents": "pages->invisible()" },
+        { "trigger": "pages->countInvisible()", "contents": "pages->countInvisible()" },
+        { "trigger": "pages->without()", "contents": "pages->without(${1:\\$uid})" },
+        { "trigger": "pages->not()", "contents": "pages->not(${1:\\$uid})" },
+        { "trigger": "pages->slice()", "contents": "pages->slice(${1:\\$offset}, ${2:\\$limit})" },
+        { "trigger": "pages->limit()", "contents": "pages->limit(${1:\\$limit})" },
+        { "trigger": "pages->offset()", "contents": "pages->offset(${1:\\$offset})" },
+        { "trigger": "pages->flip()", "contents": "pages->flip()" },
+        { "trigger": "pages->sortBy()", "contents": "pages->sortBy(${1:\\$sort='title'}, ${2:\\$dir='asc'})" },
+        { "trigger": "pages->shuffle()", "contents": "pages->shuffle()" },
+        { "trigger": "pages->paginate()", "contents": "pages->paginate(${1:\\$numPages})" },
+
+
+        /*           $pages->pagination()         */
+        { "trigger": "list->pagination()->page()", "contents": "list->pagination()->page()" },
+        { "trigger": "list->pagination()->hasPages()", "contents": "list->pagination()->hasPages()" },
+        { "trigger": "list->pagination()->countPages()", "contents": "list->pagination()->countPages()" },
+        { "trigger": "list->pagination()->countItems()", "contents": "list->pagination()->countItems()" },
+        { "trigger": "list->pagination()->pageURL()", "contents": "list->pagination()->pageURL(${1:\\$page})" },
+        { "trigger": "list->pagination()->firstPage()", "contents": "list->pagination()->firstPage()" },
+        { "trigger": "list->pagination()->isFirstPage()", "contents": "list->pagination()->isFirstPage()" },
+        { "trigger": "list->pagination()->firstPageURL()", "contents": "list->pagination()->firstPageURL()" },
+        { "trigger": "list->pagination()->lastPage()", "contents": "list->pagination()->lastPage()" },
+        { "trigger": "list->pagination()->isLastPage()", "contents": "list->pagination()->isLastPage()" },
+        { "trigger": "list->pagination()->lastPageURL()", "contents": "list->pagination()->lastPageURL()" },
+        { "trigger": "list->pagination()->prevPage()", "contents": "list->pagination()->prevPage()" },
+        { "trigger": "list->pagination()->hasPrevPage()", "contents": "list->pagination()->hasPrevPage()" },
+        { "trigger": "list->pagination()->prevPageURL()", "contents": "list->pagination()->prevPageURL()" },
+        { "trigger": "list->pagination()->nextPage()", "contents": "list->pagination()->nextPage()" },
+        { "trigger": "list->pagination()->hasNextPage()", "contents": "list->pagination()->hasNextPage()" },
+        { "trigger": "list->pagination()->nextPageURL()", "contents": "list->pagination()->nextPageURL()" },
+
+
+        /*                 $page                 */
+        { "trigger": "$page", "contents": "\\$page" },
+        { "trigger": "page->title()", "contents": "page->title()" },
+        { "trigger": "page->parent()", "contents": "page->parent()" },
+        { "trigger": "page->children()", "contents": "page->children()" },
+        { "trigger": "page->hasChildren()", "contents": "page->hasChildren()" },
+        { "trigger": "page->siblings()", "contents": "page->siblings()" },
+        { "trigger": "page->template()", "contents": "page->template()" },
+        { "trigger": "page->next()", "contents": "page->next()" },
+        { "trigger": "page->hasNext()", "contents": "page->hasNext()" },
+        { "trigger": "page->prev()", "contents": "page->prev()" },
+        { "trigger": "page->hasPrev()", "contents": "page->hasPrev()" },
+        { "trigger": "page->nextVisible()", "contents": "page->nextVisible()" },
+        { "trigger": "page->hasNextVisible()", "contents": "page->hasNextVisible()" },
+        { "trigger": "page->prevVisible()", "contents": "page->prevVisible()" },
+        { "trigger": "page->hasPrevVisible()", "contents": "page->hasPrevVisible()" },
+        { "trigger": "page->url()", "contents": "page->url()" },
+        { "trigger": "page->tinyurl()", "contents": "page->tinyurl()" },
+        { "trigger": "page->date()", "contents": "page->date(${1:\\$format=false})" },
+        { "trigger": "page->isHomePage()", "contents": "page->isHomePage()" },
+        { "trigger": "page->isErrorPage()", "contents": "page->isErrorPage()" },
+        { "trigger": "page->isActive()", "contents": "page->isActive()" },
+        { "trigger": "page->isOpen()", "contents": "page->isOpen()" },
+        { "trigger": "page->isVisible()", "contents": "page->isVisible()" },
+        { "trigger": "page->isChildOf()", "contents": "page->isChildOf(${1:\\$obj})" },
+        { "trigger": "page->isAncestorOf()", "contents": "page->isAncestorOf(${1:\\$obj})" },
+        { "trigger": "page->isDescendantOf()", "contents": "page->isDescendantOf(${1:\\$obj})" },
+        { "trigger": "page->isDescendantOfActive()", "contents": "page->isDescendantOfActive()" },
+        { "trigger": "page->files()", "contents": "page->files()" },
+        { "trigger": "page->hasFiles()", "contents": "page->hasFiles()" },
+        { "trigger": "page->images()", "contents": "page->images()" },
+        { "trigger": "page->hasImages()", "contents": "page->hasImages()" },
+        { "trigger": "page->videos()", "contents": "page->videos()" },
+        { "trigger": "page->hasVideos()", "contents": "page->hasVideos()" },
+        { "trigger": "page->documents()", "contents": "page->documents()" },
+        { "trigger": "page->hasDocuments()", "contents": "page->hasDocuments()" },
+        { "trigger": "page->sounds()", "contents": "page->sounds()" },
+        { "trigger": "page->hasSounds()", "contents": "page->hasSounds()" },
+
+
+        /*                 files                 */
+        { "trigger": "page->files()->find()", "contents": "page->files()->find(${1:\\$filename})" },
+        { "trigger": "page->files()->findBy()", "contents": "page->files()->findBy(${1:\\key}, ${2:\\$value})" },
+        { "trigger": "page->files()->filterBy()", "contents": "page->files()->filterBy(${1:\\$key}, ${2:\\$value})" },
+        { "trigger": "page->files()->first()", "contents": "page->files()->first()" },
+        { "trigger": "page->files()->last()", "contents": "page->files()->last()" },
+        { "trigger": "page->files()->shuffle()", "contents": "page->files()->shuffle()" },
+        { "trigger": "page->files()->flip()", "contents": "page->files()->flip()" },
+
+
+        /*                 file                  */
+        { "trigger": "file->name()", "contents": "file->name()" },
+        { "trigger": "file->filename()", "contents": "file->filename()" },
+        { "trigger": "file->extension()", "contents": "file->extension()" },
+        { "trigger": "file->root()", "contents": "file->root()" },
+        { "trigger": "file->url()", "contents": "file->url()" },
+        { "trigger": "file->modified()", "contents": "file->modified(${1:\\$format=false})" },
+        { "trigger": "file->type()", "contents": "file->type()" },
+        { "trigger": "file->next()", "contents": "file->next()" },
+        { "trigger": "file->hasNext()", "contents": "file->hasNext()" },
+        { "trigger": "file->prev()", "contents": "file->prev()" },
+        { "trigger": "file->hasPrev()", "contents": "file->hasPrev()" },
+        { "trigger": "file->size()", "contents": "file->size()" },
+        { "trigger": "file->niceSize()", "contents": "file->niceSize()" },
+        { "trigger": "file->mime()", "contents": "file->mime()" },
+
+
+        /*                 image                 */
+        { "trigger": "image->width()", "contents": "image->width()" },
+        { "trigger": "image->height()", "contents": "image->height()" },
+        { "trigger": "image->fit()", "contents": "image->fit(${1:\\$maxSize}${2:, \\$scale=false})" },
+        { "trigger": "image->fitWidth()", "contents": "image->fitWidth(${1:\\$width}${2:, \\$scale=false})" },
+        { "trigger": "image->fitHeight()", "contents": "image->fitHeight(${1:\\$height}${2:, \\$scale=false})" }
+
+    ] 
+}

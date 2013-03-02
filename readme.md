@@ -1,5 +1,5 @@
 # Kirby CMS Auto-completion for Sublime Text 2
-This file provides you with the whole Kirby-API as shortcuts for Sublime Text 2. Follow the installation instructions down here to get your hands on that. All methods are out of the Kirby Cheat Sheet.
+This package provides you with the whole Kirby-API as shortcuts for Sublime Text 2. Follow the installation instructions down here to get your hands on that. All methods are out of the Kirby Cheat Sheet.
 
 The package contains **only** the commands from the Kirby Cheat Sheet, so there's no `kirbytext()`, `html()` and things like that (maybe it'll be there sometime – see more on that on "upcoming").
 

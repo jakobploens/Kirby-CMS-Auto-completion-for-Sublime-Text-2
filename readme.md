@@ -4,7 +4,7 @@ This package provides you with the whole Kirby-API as shortcuts for Sublime Text
 The package contains **only** the commands from the Kirby Cheat Sheet, so there's no `kirbytext()`, `html()` and things like that (maybe it'll be there sometime – see more on that on "upcoming").
 
 ## Current Version
-Contains all commands of Kirby v1.1.
+Contains all commands of Kirby 1.1.2
 
 ## Issues
 There is only one issue, but this is such a problem that it destroys the whole awesomeness of such a file. I don't know how to fix it – if you know it, it would be great if you could do a pull request or drop me a line [@plartz](http://twitter.com/plartz) or by [mail](mailto:post@jakobploens.de).
